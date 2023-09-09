@@ -19,7 +19,7 @@ for (let i = 0; i < columns; i++) {
 }
 
 function drawMatrixRain() {
-    ctx.fillStyle = 'rgba(10, 10, 15,0.3)'; // Translucent background to show trail effect
+    ctx.fillStyle = 'rgba(10, 10, 15,0.2)'; // Translucent background to show trail effect
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     ctx.fillStyle = 'rgb(51, 161, 212)'; // Text color

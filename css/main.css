@@ -153,7 +153,7 @@ h3 {
     z-index: 2;
     /* Ensure it's above the rain code */
     height: 90%;
-    max-width: 95%;
+    max-width: 90%;
 }
 
 /*---------------------- Cursor Style ------------*/
@@ -167,7 +167,9 @@ h3 {
     z-index: 3;
     transition-duration: 0.2s;
     transition-timing-function: ease-out;
-    box-shadow: 0 0 60px 30px rgba(255, 255, 255, 0.2), 0 0 100px 60px var(--color3Trans), 0 0 140px 90px rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 100px 300px rgba(255, 255, 255, 0.01),
+        0 0 150px 120px rgba(51, 161, 212, 0.1),
+        0 0 190px 150px rgba(0, 255, 255, 0.05);
 }
 
 #cursor:not(:hover) {
@@ -231,82 +233,3 @@ ul li a:hover {
 .card:hover {
     background-color: var(--color6Trans);
 }
-
-/*---------------------- Sphere Style ------------*/
-.main-wrapper {
-    display: flex;
-    position: absolute;
-    transform-style: preserve-3d;
-    perspective: 400px;
-    inset: 0;
-    align-items: center;
-    justify-content: center;
-}
-
-.sphere-wrapper {
-    transform-style: preserve-3d;
-    width: 300px;
-    height: 300px;
-    position: relative;
-    animation: rotate3d 15s linear infinite;
-}
-
-.plane {
-    position: absolute;
-    transform-style: preserve-3d;
-    inset: 0;
-}
-
-.spoke {
-    transform-origin: 0 0;
-    transform-style: preserve-3d;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    height: 200px;
-    width: 0;
-}
-
-.dot {
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    left: -3px;
-    top: 100%;
-    transform: rotateX(90deg);
-}
-
-@keyframes rotate3d {
-    0% {
-        transform: rotate3d(1, 1, 1, 0deg);
-    }
-
-    25% {
-        transform: rotate3d(1, 1, 1, 90deg);
-    }
-
-    50% {
-        transform: rotate3d(1, 1, 1, 180deg);
-    }
-
-    75% {
-        transform: rotate3d(1, 1, 1, 270deg);
-    }
-
-    100% {
-        transform: rotate3d(1, 1, 1, 360deg);
-    }
-}
-
-@keyframes pulsate {
-    0% {
-        transform: rotateX(90deg) scale(0.3) translateZ(20px);
-    }
-
-    100% {
-        transform: rotateX(90deg) scale(1) translateZ(0);
-    }
-}
-
-/*       sphere          */
