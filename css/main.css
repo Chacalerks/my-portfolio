@@ -1,5 +1,5 @@
-﻿
-@import "~font-awesome/css/font-awesome.css";
+﻿@import "~font-awesome/css/font-awesome.css";
+
 :root {
     --color1Main: #181823;
     --color1: #0A0A0F;
@@ -16,25 +16,29 @@
     --color4Trans: rgba(135, 149, 176, 0.3);
     --color5Trans: rgba(202, 216, 242, 0.3);
     --color6Trans: rgba(60, 60, 60, 0.8);
-    --gradient: linear-gradient(to right, rgba(49,156,214,1) 0%, rgba(61,192,201,1) 100%);
-    --gradient2: linear-gradient(61deg, rgba(87,204,223,1) 0%, rgba(71,115,217,1) 100%);
+    --gradient: linear-gradient(to right, rgba(49, 156, 214, 1) 0%, rgba(61, 192, 201, 1) 100%);
+    --gradient2: linear-gradient(61deg, rgba(87, 204, 223, 1) 0%, rgba(71, 115, 217, 1) 100%);
     --font-primary: 'Roboto', sans-serif;
     --font-secondary: 'Lato', sans-serif;
 }
 
-body, html {
+body,
+html {
     height: 100%;
     margin: 0;
     font-family: var(--font-primary);
     min-height: 100vh;
     background: var(--color1);
 }
+
 img {
     max-width: 100%;
     max-height: 100%;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--font-secondary);
 }
 
@@ -43,7 +47,7 @@ h1, h2, h3 {
     background-color: var(--color1);
 }
 
-.bg-color2{
+.bg-color2 {
     background-color: var(--color2);
 }
 
@@ -51,17 +55,17 @@ h1, h2, h3 {
     background-color: var(--color3);
 }
 
-.bg-color4{
+.bg-color4 {
     background-color: var(--color4);
 }
 
-.bg-color6{
+.bg-color6 {
     background-color: var(--color6);
 }
 
 /* This secction is for color backgrounds with transparency*/
 
-.bg-color1Trans{
+.bg-color1Trans {
     background-color: var(--color1Trans);
 }
 
@@ -90,7 +94,7 @@ h1, h2, h3 {
     color: var(--color1);
 }
 
-.color2{
+.color2 {
     color: var(--color2);
 }
 
@@ -98,7 +102,7 @@ h1, h2, h3 {
     color: var(--color3);
 }
 
-.color4{
+.color4 {
     color: var(--color4);
 }
 
@@ -112,7 +116,8 @@ h1, h2, h3 {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 0; /* This ensures the rain code is below the profile picture */
+    z-index: 0;
+    /* This ensures the rain code is below the profile picture */
 }
 
 
@@ -145,10 +150,12 @@ h1, h2, h3 {
 }
 
 .landdingPage {
-    z-index: 2; /* Ensure it's above the rain code */
+    z-index: 2;
+    /* Ensure it's above the rain code */
     height: 90%;
     max-width: 95%;
 }
+
 /*---------------------- Cursor Style ------------*/
 /*    box-shadow: 0 0 60px 30px rgba(255,255,255,0.2),
         0 0 100px 60px var(--color3Trans), 
@@ -160,7 +167,7 @@ h1, h2, h3 {
     z-index: 3;
     transition-duration: 0.2s;
     transition-timing-function: ease-out;
-    box-shadow: 0 0 60px 30px rgba(255,255,255,0.2), 0 0 100px 60px var(--color3Trans), 0 0 140px 90px rgba(0,255,255,0.2);
+    box-shadow: 0 0 60px 30px rgba(255, 255, 255, 0.2), 0 0 100px 60px var(--color3Trans), 0 0 140px 90px rgba(0, 255, 255, 0.2);
 }
 
 #cursor:not(:hover) {
@@ -182,44 +189,44 @@ ul {
     font-family: 'Mochiy Pop One', sans-serif;
 }
 
-    ul li {
-        position: relative;
-        list-style: none;
-        
-    }
+ul li {
+    position: relative;
+    list-style: none;
 
-        ul li a {
-            text-decoration: none;
-            text-transform: uppercase;
-            color: transparent;
-            padding-left: 5rem;
-            -webkit-text-stroke: 1px var(--color4);
-        }
+}
 
-            ul li a::before {
-                transform: translateX(-0.5em);
-                content: attr(data-text);
-                position: absolute;
-                color: var(--color2);
-                width: 0;
-                overflow: hidden;
-                transition: 1s;
-                border-right: 5px solid var(--color2);
-                -webkit-text-stroke: 1px var(--color2);
-            }
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: transparent;
+    padding-left: 5rem;
+    -webkit-text-stroke: 1px var(--color4);
+}
 
-            ul li a:hover::before {
-                width: 100%;
-                filter: drop-shadow(0 0 25px var(--clr));
-                transform: translateX(0.5em);
-                transform: scale(1.2);
-            }
+ul li a::before {
+    transform: translateX(-0.5em);
+    content: attr(data-text);
+    position: absolute;
+    color: var(--color2);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 5px solid var(--color2);
+    -webkit-text-stroke: 1px var(--color2);
+}
 
-            ul li a:hover {
-                color: var(--color1);
-                -webkit-text-stroke: 0px var(--color4);
-            
-            }
+ul li a:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+    transform: translateX(0.5em);
+    transform: scale(1.2);
+}
+
+ul li a:hover {
+    color: var(--color1);
+    -webkit-text-stroke: 0px var(--color4);
+
+}
 
 .card:hover {
     background-color: var(--color6Trans);
@@ -303,4 +310,3 @@ ul {
 }
 
 /*       sphere          */
-
