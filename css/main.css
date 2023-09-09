@@ -1,0 +1,306 @@
+﻿
+@import "~font-awesome/css/font-awesome.css";
+:root {
+    --color1Main: #181823;
+    --color1: #0A0A0F;
+    --color2: rgb(51, 161, 212);
+    --color3: #3CBCCB;
+    --color4: #8795B0;
+    --color5: #CAD8F2;
+    --color6: rgb(30, 30, 30);
+    --white: #FFFFFF;
+    --color1MainTrans: rgba(24, 24, 35, 0.2);
+    --color1Trans: rgba(10, 10, 15, 0.1);
+    --color2Trans: rgba(51, 161, 212, 0.2);
+    --color3Trans: rgba(60, 188, 203, 0.2);
+    --color4Trans: rgba(135, 149, 176, 0.3);
+    --color5Trans: rgba(202, 216, 242, 0.3);
+    --color6Trans: rgba(60, 60, 60, 0.8);
+    --gradient: linear-gradient(to right, rgba(49,156,214,1) 0%, rgba(61,192,201,1) 100%);
+    --gradient2: linear-gradient(61deg, rgba(87,204,223,1) 0%, rgba(71,115,217,1) 100%);
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Lato', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: var(--font-primary);
+    min-height: 100vh;
+    background: var(--color1);
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-secondary);
+}
+
+/* This secction is for color backgrounds*/
+.bg-color1 {
+    background-color: var(--color1);
+}
+
+.bg-color2{
+    background-color: var(--color2);
+}
+
+.bg-color3 {
+    background-color: var(--color3);
+}
+
+.bg-color4{
+    background-color: var(--color4);
+}
+
+.bg-color6{
+    background-color: var(--color6);
+}
+
+/* This secction is for color backgrounds with transparency*/
+
+.bg-color1Trans{
+    background-color: var(--color1Trans);
+}
+
+.bg-color2Trans {
+    background-color: var(--color2Trans);
+}
+
+.bg-color3Trans {
+    background-color: var(--color3Trans);
+}
+
+.bg-color4Trans {
+    background-color: var(--color4Trans);
+}
+
+.bg-color5Trans {
+    background-color: var(--color5Trans);
+}
+
+.bg-color6Trans {
+    background-color: var(--color6Trans);
+}
+
+/*font color*/
+.color1 {
+    color: var(--color1);
+}
+
+.color2{
+    color: var(--color2);
+}
+
+.color3 {
+    color: var(--color3);
+}
+
+.color4{
+    color: var(--color4);
+}
+
+.color5 {
+    color: var(--color5)
+}
+
+/*Rain Code Matrix*/
+#matrix-rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0; /* This ensures the rain code is below the profile picture */
+}
+
+
+
+/*Portafolio section */
+.portfolio-section {
+    background-color: var(--color1);
+    color: var(--color4);
+    z-index: 2;
+
+}
+
+
+.underline {
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--color2);
+    transition: width 0.3s;
+}
+
+.portfolio-section:hover .underline {
+    width: 50%;
+}
+
+/*Profile picture*/
+.profile-picture {
+    z-index: 2;
+    text-align: center;
+}
+
+.landdingPage {
+    z-index: 2; /* Ensure it's above the rain code */
+    height: 90%;
+    max-width: 95%;
+}
+/*---------------------- Cursor Style ------------*/
+/*    box-shadow: 0 0 60px 30px rgba(255,255,255,0.2),
+        0 0 100px 60px var(--color3Trans), 
+        0 0 140px 90px rgba(0,255,255,0.2); /* outer cyan */
+#cursor {
+    border-radius: 100%;
+    position: absolute;
+    display: none;
+    z-index: 3;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    box-shadow: 0 0 60px 30px rgba(255,255,255,0.2), 0 0 100px 60px var(--color3Trans), 0 0 140px 90px rgba(0,255,255,0.2);
+}
+
+#cursor:not(:hover) {
+    transform: scale(1.5);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+
+/*---------------------- List Style ------------*/
+ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+    ul li {
+        position: relative;
+        list-style: none;
+        
+    }
+
+        ul li a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: transparent;
+            padding-left: 5rem;
+            -webkit-text-stroke: 1px var(--color4);
+        }
+
+            ul li a::before {
+                transform: translateX(-0.5em);
+                content: attr(data-text);
+                position: absolute;
+                color: var(--color2);
+                width: 0;
+                overflow: hidden;
+                transition: 1s;
+                border-right: 5px solid var(--color2);
+                -webkit-text-stroke: 1px var(--color2);
+            }
+
+            ul li a:hover::before {
+                width: 100%;
+                filter: drop-shadow(0 0 25px var(--clr));
+                transform: translateX(0.5em);
+                transform: scale(1.2);
+            }
+
+            ul li a:hover {
+                color: var(--color1);
+                -webkit-text-stroke: 0px var(--color4);
+            
+            }
+
+.card:hover {
+    background-color: var(--color6Trans);
+}
+
+/*---------------------- Sphere Style ------------*/
+.main-wrapper {
+    display: flex;
+    position: absolute;
+    transform-style: preserve-3d;
+    perspective: 400px;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.sphere-wrapper {
+    transform-style: preserve-3d;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    animation: rotate3d 15s linear infinite;
+}
+
+.plane {
+    position: absolute;
+    transform-style: preserve-3d;
+    inset: 0;
+}
+
+.spoke {
+    transform-origin: 0 0;
+    transform-style: preserve-3d;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 200px;
+    width: 0;
+}
+
+.dot {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: -3px;
+    top: 100%;
+    transform: rotateX(90deg);
+}
+
+@keyframes rotate3d {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+
+    25% {
+        transform: rotate3d(1, 1, 1, 90deg);
+    }
+
+    50% {
+        transform: rotate3d(1, 1, 1, 180deg);
+    }
+
+    75% {
+        transform: rotate3d(1, 1, 1, 270deg);
+    }
+
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        transform: rotateX(90deg) scale(0.3) translateZ(20px);
+    }
+
+    100% {
+        transform: rotateX(90deg) scale(1) translateZ(0);
+    }
+}
+
+/*       sphere          */
+
