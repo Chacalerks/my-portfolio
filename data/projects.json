@@ -1,0 +1,37 @@
+[
+  {
+    "Title": "Ferks Calendar",
+    "Description": " At the age of 16, I undertook my inaugural project: a school activity management system. This platform allows for the scheduling of any upcoming school activity, ensuring seamless event coordination.",
+    "Images": ["ferks1.png", "ferks2.png", "ferks2.png"],
+    "Tags": ["HTML", "CSS 3", "JS", "MySql", "PHP"]
+  },
+
+  {
+    "Title": "Data Base II Project",
+    "Description": "TDeveloped to optimize a database challenge for a leading supermarket chain in Central America, headquartered in Costa Rica. Has system facilitates online shopping for customers and provides the administrator with comprehensive reports, streamlining the management of sales, inventory, and personnel. ",
+    "Images": ["DB-II-1.png", "DB-II-2.png", "DB-II-3.png"],
+    "Tags": [
+      "HTML 5",
+      "JS",
+      "CSS 3",
+      "Boostrap",
+      "JS",
+      "SQL Server",
+      "C#",
+      "Asp .Net"
+    ]
+  },
+
+  {
+    "Title": "Compi Project",
+    "Description": "A compiler for the Triangle language, an imperative functional language. This required extensive research into programming paradigms, as well as a deep understanding of how compilers work. ",
+    "Images": ["compi1.png", "compi2.png", "compi3.png"],
+    "Tags": ["Java", "Imperative Lenguajes", "Compilers"]
+  },
+  {
+    "Title": "Compi Project",
+    "Description": "A compiler for the Triangle language, an imperative functional language. This required extensive research into programming paradigms, as well as a deep understanding of how compilers work. ",
+    "Images": ["compi1.png", "compi2.png", "compi3.png"],
+    "Tags": ["Java", "Imperative Lenguajes", "Compilers"]
+  }
+]
