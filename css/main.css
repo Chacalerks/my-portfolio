@@ -7,14 +7,15 @@
     --color3: #3CBCCB;
     --color4: #8795B0;
     --color5: #CAD8F2;
-    --color6: rgb(30, 30, 30);
+    --color6: rgb(20, 25, 25);
     --white: #FFFFFF;
     --color1MainTrans: rgba(24, 24, 35, 0.2);
-    --color1Trans: rgba(10, 10, 15, 0.1);
+    --color1Trans: rgba(10, 10, 15, 0.5);
     --color2Trans: rgba(51, 161, 212, 0.2);
-    --color3Trans: rgba(60, 188, 203, 0.2);
-    --color4Trans: rgba(135, 149, 176, 0.3);
-    --color5Trans: rgba(202, 216, 242, 0.3);
+    --color2TransPlus: rgba(51, 161, 212, 0.08);
+    --color3Trans: rgba(60, 188, 203, 0.4);
+    --color4Trans: rgba(135, 149, 176, 0.4);
+    --color5Trans: rgba(202, 216, 242, 0.4);
     --color6Trans: rgba(60, 60, 60, 0.8);
     --gradient: linear-gradient(to right, rgba(49, 156, 214, 1) 0%, rgba(61, 192, 201, 1) 100%);
     --gradient2: linear-gradient(61deg, rgba(87, 204, 223, 1) 0%, rgba(71, 115, 217, 1) 100%);
@@ -38,11 +39,20 @@ img {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: var(--font-secondary);
 }
 
+p {
+    font-size: medium;
+}
+
 /* This secction is for color backgrounds*/
+.bg-color1Main {
+    background-color: var(--color1Main);
+}
+
 .bg-color1 {
     background-color: var(--color1);
 }
@@ -59,6 +69,10 @@ h3 {
     background-color: var(--color4);
 }
 
+.bg-color5 {
+    background-color: var(--color5);
+}
+
 .bg-color6 {
     background-color: var(--color6);
 }
@@ -71,6 +85,10 @@ h3 {
 
 .bg-color2Trans {
     background-color: var(--color2Trans);
+}
+
+.bg-color2TransPlus {
+    background-color: var(--color2TransPlus);
 }
 
 .bg-color3Trans {
@@ -110,6 +128,27 @@ h3 {
     color: var(--color5)
 }
 
+.color6 {
+    color: var(--color6)
+}
+
+.color3Trans {
+    color: var(--color3Trans);
+}
+
+.color4Trans {
+    color: var(--color4Trans);
+}
+
+.color5Trans {
+    color: var(--color5Trans)
+}
+
+.color6Trans {
+    color: var(--color6Trans)
+}
+
+
 /*Rain Code Matrix*/
 #matrix-rain {
     position: absolute;
@@ -140,8 +179,8 @@ h3 {
 .landdingPage {
     z-index: 2;
     /* Ensure it's above the rain code */
-    height: 90%;
-    max-width: 90%;
+    height: 85%;
+    max-width: 85%;
 }
 
 /*---------------------- Cursor Style ------------*/
@@ -190,7 +229,7 @@ h3 {
     text-transform: uppercase;
     color: transparent;
     padding-left: 5rem;
-    -webkit-text-stroke: 1px var(--color4);
+    -webkit-text-stroke: 0.7px var(--color4);
 }
 
 .nav-side li a::before {
@@ -201,7 +240,7 @@ h3 {
     width: 0;
     overflow: hidden;
     transition: 1s;
-    border-right: 5px solid var(--color2);
+    border-right: 3px solid var(--color2);
     -webkit-text-stroke: 1px var(--color2);
 }
 
@@ -251,4 +290,38 @@ h3 {
 /*---------------------- Card Style ------------*/
 .card:hover {
     background-color: var(--color6Trans);
+}
+
+.post-container:hover .post-element {
+    opacity: .5;
+    transition: all .3s linear;
+}
+
+#post-element-active {
+    opacity: 1;
+    background-color: var(--color2TransPlus);
+    transition: all .3s linear;
+}
+
+.tag {
+    text-shadow:
+        0 0 3px var(--color2),
+        0 0 10px var(--color2Trans);
+}
+
+
+/*---------------------- About Style ------------*/
+.bg-ability {
+    background-color: var(--color2);
+    width: fit-content;
+    height: max-content;
+    /* Adjusted size based on hexagonal ratio */
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    /* Hexagonal shape */
+}
+
+.about-abilities {
+
+    list-style: none;
+
 }

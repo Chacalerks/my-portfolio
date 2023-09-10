@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <main>
+  <main class="main-trans">
     <div class="vh-100">
       <div id="matrix-rain" class="h-100"></div>
       <header
@@ -32,11 +32,11 @@
             <p class="fs-6 text-start mb-0 color2" style="font-family: Consolas">
               Hi, my name is
             </p>
-            <h1 class="mb-3 text-start mb-0 color5 " style="font-weight: 800; font-size: 3.5rem;">
+            <h1 class="mb-3 text-start mb-0 color5 " style="font-weight: 800; ">
               Maynor Martínez
             </h1>
 
-            <h2 class="mb-3 text-start fw-bold fs-2" style="font-weight: 800">
+            <h2 class="mb-3 text-start fw-bold fs-3" style="font-weight: 800">
               Computer Engineer Student
             </h2>
             <p class="text-start">
@@ -48,13 +48,14 @@
 
           <!-- Nav Buttons -->
           <nav>
-            <ul class="fs-3 nav-side">
+            <ul class="fs-5 nav-side ">
+              <li style="--clr: #ffdd1c">
+                <a href="#aboutSection" data-text="&nbsp;About">&nbsp;About&nbsp;</a>
+              </li>
               <li style="--clr: #00ade1">
                 <a href="#projectSection" data-text="&nbsp;Projects">&nbsp;Projects&nbsp;</a>
               </li>
-              <li style="--clr: #ffdd1c">
-                <a href="#" data-text="&nbsp;About">&nbsp;About&nbsp;</a>
-              </li>
+
               <li style="--clr: #dc00d4">
                 <a href="#" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a>
               </li>
@@ -83,7 +84,7 @@
         </div>
 
         <!-- Sphere Code  -->
-        <div id="chacaclerks" class="col-7 bg-color1 bold mh-100% h-100 bg-color2">
+        <div id="chacaclerks" class="col-7 bg-color1 bold mh-100% h-100 bg-color1">
           <style>
             body {
               margin: 0;
@@ -98,18 +99,67 @@
     </div>
 
     <div style="max-width: 100%; height: 2px; background-color: var(--color2)"></div>
-    <!-- Project Code Section -->
 
+    <!-- About Section -->
+    <section id="aboutSection" class="container-fluid w-100 aling-items-center bg-color1Main">
+      <h3 class="text-center color4 fs-1 fw-light py-5 ">About</h3>
+
+      <div class="container w-75 d-flex">
+        <img src="img/me.png" alt="" class="px-5 pb-5">
+        <header class="m-auto p-5">
+          <h4 class="color5 fs-3 mb-3"> Maynor Erks Martínez Hernández</h4>
+          <p class="color4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi at ut, culpa reiciendis voluptate sapiente
+            eligendi quo, cupiditate distinctio obcaecati soluta aut dignissimos explicabo nulla eius eos aliquid rem
+            veritatis!
+          </p>
+          <ul class="about-abilities d-flex py-3 color5 m-auto aling-items-center px-0">
+            <li>
+              <div class="bg-ability px-4 py-3 m-auto fs-2  "> <i class="bi-lightbulb-fill"></i></div>
+              <div class="text-center p-2">
+                <h6 class="fs-4 color2">Inovation</h6>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi at ut,</div>
+
+              </div>
+
+            </li>
+            <li>
+              <div class="bg-ability px-4 py-3 m-auto fs-2   "> <i class="bi bi-star-fill"></i>
+              </div>
+              <div class="text-center p-2">
+                <h6 class="fs-4 color2">Extra Mile</h6>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi at ut,</div>
+
+              </div>
+            </li>
+            <li>
+              <div class="bg-ability px-4 py-3 m-auto fs-2   "> <i class="bi bi-person-circle"></i>
+              </div>
+              <div class="text-center p-2">
+                <h6 class="fs-4 color2">LeaderShip</h6>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi at ut,</div>
+
+              </div>
+            </li>
+          </ul>
+        </header>
+      </div>
+    </section>
+
+    <!-- Project Code Section -->
     <section id="projectSection" class="container-fluid w-75 aling-items-center">
+
       <h3 class="text-center color4 fs-1 fw-light py-5">Projects</h3>
 
       <div class="post-container container w-75">
 
         <!--Templeta Project-->
         <!--
-        <div class="p-3 mb-3 bg-color6 text-primary d-flex rounded ">
+        <div class="post-element p-3 mb-1 text-primary d-flex rounded">
+          <div class="mb-3 trans-div position-absolute bg-color1Trans rounded">
 
-          
+          </div>
+
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -147,8 +197,8 @@
           <div class="px-3 col-7 d-flex flex-column justify-content-between">
             <div>
               <h5 class="fs-2 color4">Some Name</h5>
-              
-              <p class="color5"> 
+
+              <p class="color5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat.
@@ -168,11 +218,11 @@
     </section>
 
     <!-- Project Code Section -->
-    <div id="experienceSection" class="container-fluid w-75 aling-items-center">
+    <section id="experienceSection" class="container-fluid w-75 aling-items-center">
       <h3 class="text-center color4 fs-1 fw-light py-5">Experience</h3>
 
-      <section class="container w-75"></section>
-    </div>
+      <div class="container w-75"></div>
+    </section>
   </main>
 
   <div id="cursor"></div>

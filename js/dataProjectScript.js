@@ -69,8 +69,8 @@ const dataPost = (post) => {
     dataPost.className = 'px-3 col-7 d-flex flex-column justify-content-between';
 
     let dataPostContect = document.createElement('div');
-    dataPostContect.innerHTML = `<h5 class="fs-2 color4">${post.Title}</h5>
-    <p class="color5" >${post.Description}</p>`;
+    dataPostContect.innerHTML = `<h5 class="fs-3 color5">${post.Title}</h5>
+    <p class="color4" >${post.Description}</p>`;
 
     let dataPostTagsElement = dataPostTags(post);
 
@@ -83,7 +83,7 @@ const dataPost = (post) => {
 const dataPostTags = (post) => {
     const dataPostTags = document.createElement('div');
     for (let i = 0; i < post.Tags.length; i++) {
-        dataPostTags.innerHTML += `<span class="badge badge-pill bg-color2Trans color2">${post.Tags[i]}</span> `;
+        dataPostTags.innerHTML += `<span class="tag p-2 badge badge-pill bg-color2Trans color2" >${post.Tags[i]}</span> `;
     }
     return dataPostTags;
 }
@@ -96,9 +96,15 @@ const postMethods = (jsonData) => {
 
         const postElement = document.createElement('div');
         const carouselElement = carousel(index, post);
+
+        //transparecy div 
+        const transparecyDiv = document.createElement('div');
+        //transparecyDiv.className = 'mb-3 trans-div position-absolute bg-color1Trans';
+        //postElement.appendChild(transparecyDiv);
         const postData = dataPost(post);
 
-        postElement.className = 'p-3 mb-3 bg-color6 text-primary d-flex rounded';
+        postElement.className = 'post-element p-3 mb-1 text-primary d-flex rounded';
+
         postElement.appendChild(carouselElement);
         postElement.appendChild(postData);
 
@@ -121,4 +127,22 @@ fetch('../data/projects.json')
         // If your JSON has the Description as an array and you want to join it
 
         postMethods(jsonData);
+
+        let postElementsData = document.querySelectorAll('.post-element');
+
+        //detect when a post element mouse enter
+        postElementsData.forEach(postElement => {
+            postElement.addEventListener('mouseenter', () => {
+
+                postElement.setAttribute('id', 'post-element-active');
+
+                //add a clase to the main element
+            })
+            postElement.addEventListener('mouseleave', () => {
+
+                postElement.removeAttribute('id');
+
+            })
+
+        })
     })

@@ -27,11 +27,5 @@
     "Description": "A compiler for the Triangle language, an imperative functional language. This required extensive research into programming paradigms, as well as a deep understanding of how compilers work. ",
     "Images": ["compi1.png", "compi2.png", "compi3.png"],
     "Tags": ["Java", "Imperative Lenguajes", "Compilers"]
-  },
-  {
-    "Title": "Compi Project",
-    "Description": "A compiler for the Triangle language, an imperative functional language. This required extensive research into programming paradigms, as well as a deep understanding of how compilers work. ",
-    "Images": ["compi1.png", "compi2.png", "compi3.png"],
-    "Tags": ["Java", "Imperative Lenguajes", "Compilers"]
   }
 ]
