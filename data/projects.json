@@ -1,5 +1,48 @@
 [
   {
+    "Title": "Manitos Maravillosas",
+    "Description": "Manitos Maravillosas and Don Mae, it is a software that implements an efficient and versatile inventory system that meets the complex needs of two coexisting businesses in the same space in Nicaragua. This system will be used by two types of users, the owner (administrator) and the employees (users).\n\n    Authors: Maynor Martínez, Fernanda Murillo and César Jiménez.",
+    "Images": [
+      "manitos1.png",
+      "manitos2.png",
+      "manitos3.png",
+      "manitos4.png",
+      "manitos5.png",
+      "manitos6.png",
+      "manitos7.png"
+    ],
+    "Tags": [
+      "HTML 5",
+      "JS",
+      "CSS 3",
+      "Boostrap",
+      "JS",
+      "SQL Server",
+      "C#",
+      "Asp Core .Net"
+    ]
+  },
+  {
+    "Title": "Cancherks",
+    "Description": "Sport installation system where students and employees can reserve any type of sport installation during the available times. The administrators can manage the requests.\n\n    Authors: Maynor Martínez and Fernanda Murillo.",
+    "Images": [
+      "cancherks1.png",
+      "cancherks2.png",
+      "cancherks3.png",
+      "cancherks4.png"
+    ],
+    "Tags": [
+      "HTML 5",
+      "JS",
+      "CSS 3",
+      "Boostrap",
+      "JS",
+      "SQL Server",
+      "C#",
+      "Asp Core .Net"
+    ]
+  },
+  {
     "Title": "Ferks Calendar",
     "Description": " At the age of 16, I undertook my inaugural project: a school activity management system. This platform allows for the scheduling of any upcoming school activity, ensuring seamless event coordination.",
     "Images": ["ferks1.png", "ferks2.png", "ferks2.png"],
